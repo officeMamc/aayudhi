@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Aayudhi</title>
+    <style>
+        .main {
+            background-color: navy;
+            color: white;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            }
+            .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+    </style>
+</head>
+<body>
+    <div class="main"> <img src="{{url_for('static', filename='logo.png')}}" align="left" height="125px" width="125px" background-color:"transparent"/> <h1> AAYUDHI <br> Next Gen Pvt Ltd.</h1></div>
+
+    <form action="/home" method="post">
+        <p>
+            <table class="center">
+                <tr><td>Username:</td><td><input type="text" name="uname"></td></tr>
+                <tr><td>Password:</td><td><input type="text" name="pass"></td></tr>
+                <tr><td colspan="2"><input type="submit"><td></tr>
+            </table>
+        </p>
+    </form>
+
+
+
+</body>
+</html>
